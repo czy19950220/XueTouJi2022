@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SelfCheck</class>
+ <widget class="QWidget" name="SelfCheck">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1428</width>
+    <height>806</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widgetTable" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1190</width>
+     <height>770</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1190</width>
+     <height>770</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1190</width>
+     <height>770</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#SelfCheckItem{
+	max-height:52px;
+	min-height:52px;
+
+}
+</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>36</number>
+    </property>
+    <property name="leftMargin">
+     <number>70</number>
+    </property>
+    <property name="topMargin">
+     <number>60</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>39</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>20</number>
+      </property>
+      <item>
+       <widget class="SelfCheckItem" name="widgetBloodLine" native="true"/>
+      </item>
+      <item>
+       <widget class="SelfCheckItem" name="widgetArterialPressure" native="true"/>
+      </item>
+      <item>
+       <widget class="SelfCheckItem" name="widgetVenousPressure" native="true"/>
+      </item>
+      <item>
+       <widget class="SelfCheckItem" name="widgetAirDetector" native="true"/>
+      </item>
+      <item>
+       <widget class="SelfCheckItem" name="widgetOpticalDetector" native="true"/>
+      </item>
+      <item>
+       <widget class="SelfCheckItem" name="widgetBloodLeak" native="true"/>
+      </item>
+      <item>
+       <widget class="SelfCheckItem" name="widgetHeparin" native="true"/>
+      </item>
+      <item>
+       <widget class="QWidget" name="widgetBattery" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>52</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>39</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>20</number>
+      </property>
+      <item>
+       <widget class="SelfCheckItem" name="widgetByPass" native="true"/>
+      </item>
+      <item>
+       <widget class="SelfCheckItem" name="widgetTemperature" native="true"/>
+      </item>
+      <item>
+       <widget class="SelfCheckItem" name="widgetNegativePressure" native="true"/>
+      </item>
+      <item>
+       <widget class="SelfCheckItem" name="widgetConductivity" native="true"/>
+      </item>
+      <item>
+       <widget class="SelfCheckItem" name="widgetPositivePressure" native="true"/>
+      </item>
+      <item>
+       <widget class="SelfCheckItem" name="widgetUF" native="true"/>
+      </item>
+      <item>
+       <widget class="SelfCheckItem" name="widgetDialysate" native="true"/>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>52</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButtonCheckAgain">
+   <property name="geometry">
+    <rect>
+     <x>1150</x>
+     <y>696</y>
+     <width>200</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButtonCheckAgain{
+	font-size:36px;
+	border-image: url(:/public/bottom/button_open.png);
+	color:#fff;
+	border-radius:10px;
+}
+#pushButtonCheckAgain:pressed{
+	border-image: url(:/public/bottom/button_ing.png)
+}</string>
+   </property>
+   <property name="text">
+    <string>重新测试</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SelfCheckItem</class>
+   <extends>QWidget</extends>
+   <header location="global">./components/selfCheckItem/selfcheckitem.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

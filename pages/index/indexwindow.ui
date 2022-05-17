@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IndexWindow</class>
+ <widget class="QMainWindow" name="IndexWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#IndexWindow{
+	background-image:url(:/public/index/main_background.png);
+	background-repeat: no-repeat;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widgetHead" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>94</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1920</width>
+      <height>94</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1920</width>
+      <height>94</height>
+     </size>
+    </property>
+    <widget class="FormHeadLeft" name="widgetHeadLeft" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>568</width>
+       <height>94</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>568</width>
+       <height>94</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>568</width>
+       <height>94</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="FormHeaderCenter" name="widgetHeadCenter" native="true">
+     <property name="geometry">
+      <rect>
+       <x>568</x>
+       <y>32</y>
+       <width>537</width>
+       <height>62</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>537</width>
+       <height>62</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>537</width>
+       <height>62</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="FormHeaderRight" name="widgetHeadRight" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1130</x>
+       <y>0</y>
+       <width>790</width>
+       <height>94</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widgetCenter" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>124</y>
+      <width>1920</width>
+      <height>806</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1920</width>
+      <height>806</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1920</width>
+      <height>806</height>
+     </size>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QStackedWidget" name="stackedWidgetCenter">
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="pageTypeOne">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="widgetTypeOne" native="true"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="pageTypeTwo">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="IndexPageTypeTwo" name="widgetTypeTwo" native="true"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="BottomButtons" name="widgetBottom" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>940</y>
+      <width>1920</width>
+      <height>140</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>FormHeadLeft</class>
+   <extends>QWidget</extends>
+   <header location="global">./components/header/formheadleft.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormHeaderCenter</class>
+   <extends>QWidget</extends>
+   <header location="global">./components/header/formheadercenter.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormHeaderRight</class>
+   <extends>QWidget</extends>
+   <header>./components/header/formheaderright.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>IndexPageTypeTwo</class>
+   <extends>QWidget</extends>
+   <header location="global">./pages/index/indexpagetypetwo.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BottomButtons</class>
+   <extends>QWidget</extends>
+   <header location="global">./components/bottom/bottombuttons.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

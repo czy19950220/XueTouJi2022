@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LeftTopButton</class>
+ <widget class="QWidget" name="LeftTopButton">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>184</width>
+    <height>66</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>184</width>
+    <height>66</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>184</width>
+    <height>66</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color:#373f44;
+border:none;</string>
+  </property>
+  <widget class="QPushButton" name="pushButtonLight">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>15</y>
+     <width>16</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image:url(:/public/left/left_light_off.png)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>0</y>
+     <width>166</width>
+     <height>66</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>28</pointsize>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+  </widget>
+  <zorder>pushButton</zorder>
+  <zorder>pushButtonLight</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

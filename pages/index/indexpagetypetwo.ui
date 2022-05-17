@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IndexPageTypeTwo</class>
+ <widget class="QWidget" name="IndexPageTypeTwo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>806</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widgetCenterLeft" native="true">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>200</width>
+     <height>788</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>788</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>30</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="LeftTopButton" name="widgetFlow" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>184</width>
+        <height>66</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>184</width>
+        <height>66</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="LeftTopButton" name="widgetUF" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>184</width>
+        <height>66</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>184</width>
+        <height>66</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="LeftTopButton" name="widgetHeparin" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>184</width>
+        <height>66</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>184</width>
+        <height>66</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="LeftBottom" name="pressureArterial" native="true"/>
+    </item>
+    <item>
+     <widget class="LeftBottom" name="pressureVenous" native="true"/>
+    </item>
+    <item>
+     <widget class="LeftBottom" name="pressureConductivity" native="true"/>
+    </item>
+    <item>
+     <widget class="LeftBottom" name="pressureTmp" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widgetCenterPages" native="true">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>0</y>
+     <width>1428</width>
+     <height>788</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1428</width>
+     <height>788</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1428</width>
+     <height>788</height>
+    </size>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="SelfCheck" name="pageSelfCheck"/>
+      <widget class="QWidget" name="page_2"/>
+      <widget class="QWidget" name="page"/>
+      <widget class="QWidget" name="page_3"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widgetCenterRight" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1670</x>
+     <y>0</y>
+     <width>250</width>
+     <height>806</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>250</width>
+     <height>806</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>806</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <widget class="RightTemperature" name="widgetTemperature" native="true">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>0</y>
+      <width>210</width>
+      <height>50</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="BloodPump" name="widgetBloodPump" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>240</width>
+      <height>210</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="BloodSpeedAdjust" name="widgetBloodSpeedAdjust" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>323</y>
+      <width>240</width>
+      <height>430</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>LeftTopButton</class>
+   <extends>QWidget</extends>
+   <header location="global">./components/leftTop/lefttopbutton.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>LeftBottom</class>
+   <extends>QWidget</extends>
+   <header location="global">./components/leftBottom/leftbottom.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RightTemperature</class>
+   <extends>QWidget</extends>
+   <header location="global">./components/right/righttemperature.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BloodPump</class>
+   <extends>QWidget</extends>
+   <header location="global">./components/right/bloodpump.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BloodSpeedAdjust</class>
+   <extends>QWidget</extends>
+   <header location="global">./components/right/bloodspeedadjust.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SelfCheck</class>
+   <extends>QWidget</extends>
+   <header location="global">./pages/selfCheck/selfcheck.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
